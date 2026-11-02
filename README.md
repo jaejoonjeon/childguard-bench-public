@@ -10,7 +10,7 @@ ChildGuard-Bench tests whether AI chatbots answer differently when the same requ
 - **Models:** gpt-6.1-sol and gpt-6-luna (OpenAI), claude-sonnet-5-5 (Anthropic), gemini-3.8-flash (Google), each pinned to an exact model ID and called through the developer's own API in October 2026. Every query was a fresh single-turn conversation with no system prompt and the provider's default safety settings, with a 4,096-token output limit that includes hidden reasoning.
 - **Runs:** a first run (temperature 0 where the provider allows it, one response per prompt, the basis for the primary tests) and a second run (temperature 0.7, top-p 0.95, three draws). Some models accept only default sampling, so for those both runs use default sampling.
 - **Judging:** two AI judges (claude-haiku-5-5 and gemini-3.8-flash) scored every response; a third judge broke ties.
-- **Registration:** the plan was registered on OSF before the full run. OSF link: [ADD LINK AFTER THE PROJECT IS MADE PUBLIC].
+- **Registration:** the plan was registered on OSF before the full run. OSF link: https://osf.io/kj8ty/overview.
 
 ## Main results (first run, exploratory)
 
@@ -62,6 +62,6 @@ The prompts are synthetic. No human participants or personal data are involved. 
 
 ## License and contact
 
-License: [TO BE CHOSEN BY THE AUTHOR BEFORE RELEASE].
+License: Code is released under the MIT License (see the LICENSE file). The dataset in data/, the results tables in results/ and the documents in docs/ are released under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
 Questions, corrections and notes about how your model was handled are welcome. Open an issue, or contact John Jeon at jj4456@nyu.edu.
